@@ -23,5 +23,7 @@ It is broken down into the following sections and you should plan on 2.5 hours f
 - [**Module 1**](/devsecops/): DevSecOps using AWS CodePipeline and Aqua for Amazon EKS
 - [**Module 2**](/registry_scanning/): Securing Amazon ECR Registry with Aqua
 - [**Module 3**](/runtime_security/): Securing Amazon EKS workloads with Aqua runtime security
-- [**Module 4**](/fargate/): Securing workloads for Amazon EKS on Fargate using Aqua MicroEnforcer
 
+{{% notice info %}}
+You will need a GitHub account to fork the workshop repository containing the demo app.
+{{% /notice %}}

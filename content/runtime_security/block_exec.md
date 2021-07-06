@@ -7,7 +7,8 @@ pre = "<b></b>"
 +++
 
 ## Block Container Exec
-```kubectl exec``` is the easiest way to gain access to a running container and executing commands against it. Attackers with permissions could run ```kubectl exec``` to execute malicious code and compromise resources within a cluster.
+The easiest way to gain access to a running container and executing commands against it is ```kubectl exec``` 
+Attackers with permissions could run ```kubectl exec``` to execute malicious code and compromise resources within a cluster.
 
 Aqua has a security control that prevents an attacker from gaining any form of shell access to running containers. 
 
