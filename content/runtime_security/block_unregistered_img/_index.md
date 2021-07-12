@@ -28,6 +28,11 @@ kubectl describe pod <name>
 
 ![aqua-error](/images/runtime_security/aqua-error.png)
 
+Clean up the deployment
+```shell
+kubectl delete deploy nginx
+```
+
 ## Registering an image with Aqua
 Now let's register the Nginx image with Aqua using the console.
 

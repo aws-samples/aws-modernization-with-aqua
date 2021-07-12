@@ -25,4 +25,4 @@ Make sure that the right region is selected.
 
 ![AWS Region](/images/aws-region.png)
 
-Once you have completed the step above, you can head straight to [**Create a Workspace**](/configure_environment/workspace/)
+Once you have completed the step above, you can head straight to [**Create a Workspace**](/configure_environment/workspace.html)
