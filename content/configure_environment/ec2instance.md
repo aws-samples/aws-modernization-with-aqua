@@ -9,3 +9,8 @@ weight: 17
 ![c9instancerole](/images/c9instancerole.png)
 1. Choose **aqua-workshop-admin** from the **IAM Role** drop down, and select **Apply**
 ![c9attachrole](/images/c9attachrole.png)
+
+**If you are running this workshop at an AWS hosted event, the IAM role has been created for you so you can follow the directions below instead:**
+
+1. Choose **mod-c3323268de154886-EKSStack-1OVJRE9V-BastionRole-1FFSLTAUE5LK8** from the **IAM Role** drop down, and select **Apply**
+![c9attachrole](/images/snyk-docker-modify-iam.png)
