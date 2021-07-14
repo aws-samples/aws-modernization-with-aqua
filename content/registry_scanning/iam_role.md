@@ -11,7 +11,7 @@ Aqua platform uses AWS access delegation in order to connect and scan the Amazon
 ## Obtain EKS Worker node IDs
 These are used to maintain session for the assumed roles
 ```bash
-IAM=$(eksctl get nodegroup --cluster aqua --output json| jq -r .[].NodeInstanceRoleARN )
+IAM=$(eksctl get nodegroup --cluster $CLUSTER --output json| jq -r .[].NodeInstanceRoleARN )
 ROLE_NAME=$(echo $IAM | cut -d'/' -f2)
 ```
 

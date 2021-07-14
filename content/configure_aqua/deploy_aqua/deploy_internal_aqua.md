@@ -30,7 +30,7 @@ kubectl create secret docker-registry aqua-registry --docker-server=registry.aqu
 
 Deploy Aqua using the following command
 ```shell
-rm -f workshop/009-kube*
+rm -f workshop/009-aqua-kube*
 kubectl apply -f workshop/
 ```
 ![aquactl output](/images/configure_aqua/aquactl-internal-output.png)

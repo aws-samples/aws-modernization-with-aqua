@@ -29,4 +29,3 @@ Clicking on the **Vulnerabilities** tab also shows the various vulnerabilities t
 You can also go to the **Aqua Console** and view the details of the non-compliant image.
 ![CI/CD scan](/images/devsecops/ci-cd-scan.png)
 
-![CodePipeline Trigger](/images/devsecops/trigger-release.png)
