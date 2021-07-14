@@ -61,24 +61,4 @@ aws iam get-instance-profile --instance-profile-name $INSTANCE_PROFILE_NAME --qu
 ```
 -->
 
-### Update Kubeconfig
-In order to gain access to your EKS cluster, we need to add our cluster to our kubeconfig. Please run the following command below:
-
-```bash
-aws eks update-kubeconfig --name basic-eks --region us-east-1
-```
-
-In order to test that we can access our cluster, run the command below:
-
-```bash
-kubectl get svc
-```
-
-You should see an output similar to the following:
-
-```bash
-NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
-kubernetes   ClusterIP   172.20.0.1   <none>        443/TCP   3h58m
-```
-
 If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
