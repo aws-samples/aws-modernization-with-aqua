@@ -26,3 +26,13 @@ Navigate to ```Policies``` > ```Runtime Policies``` > ```Aqua default runtime po
 
 We can also add a new control to block a certain executable ```date```
 ![block-date](/images/runtime_security/block-date.png)
+
+Now let's exec into the running nginx container. We can do that now because we disabled the `Block Container Exec` control.
+
+```shell
+kubectl exec -it <pod_name> bash
+```
+
+Notice that we are now in the nginx container as the root user (something else that can be prevented by Aqua). As such, there’s nothing we should not be able to do. However, if we try executing the date executable, we will get a Permission denied error message. This is because Aqua blocked that executable from running.
+
+![exec-date](/images/runtime_security/exec-date.png)

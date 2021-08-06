@@ -32,8 +32,3 @@ list
 
 Drift prevention ensures that your containers remain immutable, and protects you from both malicious attacks and bad habits by not allowing executables to run that were not part of the original image and/or not allowing the container to run when image parameters have changed.
 
-We can also validate that the ```date``` executable is blocked.
-
-![exec-date](/images/runtime_security/exec-date.png)
-
-Notice that we are now in the nginx container as the root user (something else that can be prevented by Aqua). As such, there’s nothing we should not be able to do. However, if we try executing the date executable, we will get a Permission denied error message. This is because Aqua blocked that executable from running.
