@@ -4,6 +4,11 @@ chapter: false
 weight: 14
 ---
 
+{{% notice note %}}
+If attending and AWS Workshop this step can be skipped. An Environment will be pre-created for you.
+{{% /notice %}}
+
+
 {{% notice warning %}}
 The Cloud9 workspace should be built by an IAM user with Administrator privileges,
 not the root account user. Please ensure you are logged in as an IAM user, not the root
