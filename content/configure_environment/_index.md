@@ -19,6 +19,6 @@ Once you have completed with either setup, continue with [**Create a Workspace**
 # Objectives
 In this section, we will be focusing on configuring the Workspace for this workshop. It involves the following steps:
 
-* Creating a Cloud9 IDE environment
+* Creating a Cloud9 IDE environment (AWS attendees will have the Environment pre-created)
 * Install Kubernetes tools
 * Setup IAM permissions
