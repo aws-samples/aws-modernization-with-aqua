@@ -6,7 +6,7 @@ chapter = false
 pre = "<b></b>"
 +++
 
-Aqua takes a policy-driven approach to enforce security for remediation and compliance. To do this effectively, it uses Aqua Enforcers to monitor the runtime activity of containers, collect information about the running workloads, and enforce security based on the policies defined. Aqua provides various types of Enforcers tailored specifically to the different deployment environments. This is a test!
+Aqua takes a policy-driven approach to enforce security for remediation and compliance. To do this effectively, it uses Aqua Enforcers to monitor the runtime activity of containers, collect information about the running workloads, and enforce security based on the policies defined. Aqua provides various types of Enforcers tailored specifically to the different deployment environments.
 
 Aqua Enforcers for Amazon EKS are deployed as a Kubernetes DaemonSet on every cluster worker node to be managed by Aqua. DaemonSets ensure all Amazon EKS cluster nodes run a copy of a pod, and allow Aqua to run a daemon on every node. Enforcement can be applied to containers, hosts, and the network activity between them in the form of firewall policies.
 
