@@ -5,7 +5,7 @@ weight: 14
 ---
 
 {{% notice note %}}
-If attending and AWS Workshop this step can be skipped. An Environment will be pre-created for you.
+If attending an AWS Workshop, this step can be skipped. An Environment will be pre-created for you. Just have to Launch Cloud9 IDE from the console
 {{% /notice %}}
 
 
