@@ -12,7 +12,7 @@ Launch **Aqua Enterprise** in an Amazon EKS cluster and secure your artifacts, h
 Go to the AWS Cloud9 IDE and follow the steps in succession.
 
 ```shell
-./aquactl download all --platform eks --version 6.0 --output-dir workshop
+./aquactl download all --platform eks --version 2022.4 --output-dir workshop
 ```
 ![aquactl install](/images/configure_aqua/aquactl-install.png)
 
@@ -21,7 +21,7 @@ kubectl create ns aqua
 ```
 
 {{% notice info %}}
-Make sure that you have the Registry login and license.
+Make sure that you have the Registry login and license. For the AWS Workshop you will be provided with a username and password.
 {{% /notice %}}
 
 ```shell
