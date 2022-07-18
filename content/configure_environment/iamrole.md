@@ -4,7 +4,9 @@ chapter: false
 weight: 16
 ---
 
-**If you are running this workshop at an AWS hosted event, please note that there will be an IAM role created for you. Please ignore this step if you are runnining this at an AWS hosted event.**
+{{% notice note %}}
+If you are running this workshop at an AWS hosted event, please note that there will be an IAM role created for you. Please ignore this step if you are runnining this at an AWS hosted event.
+{{% /notice %}}
 
 If you are running this workshop on your own please follow the steps below:
 
