@@ -19,9 +19,8 @@ eksctl version
 The interactive Aqua Security aquactl command line tool simplifies the deployment of Aqua Platform on a variety of environments, including Amazon EKS. 
 
 ```shell
-wget  "https://get.aquasec.com/aquactl/v2/aquactl"
 
-chmod +x ./aquactl
+curl -O https://get.aquasec.com/aquactl/v3/aquactl && chmod +x ./aquactl
 
 ./aquactl --help
 ```                                                 
