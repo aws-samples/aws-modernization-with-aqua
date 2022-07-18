@@ -4,6 +4,10 @@ chapter: false
 weight: 17
 ---
 
+{{% notice note %}}
+If you are running this workshop at an AWS hosted event, please note the IAM may already be attached to your Workspace. Please ignore this step if you are runnining this at an AWS hosted event.
+{{% /notice %}}
+
 1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=aws-cloud9-aqua-workshop;sort=desc:launchTime)
 1. Select the instance, then choose **Actions / Security / Modify IAM Role**
 ![c9instancerole](/images/c9instancerole.png)
