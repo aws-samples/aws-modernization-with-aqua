@@ -11,10 +11,10 @@ Aqua takes a policy-driven approach to enforce security for remediation and comp
 Aqua Enforcers for Amazon EKS are deployed as a Kubernetes DaemonSet on every cluster worker node to be managed by Aqua. DaemonSets ensure all Amazon EKS cluster nodes run a copy of a pod, and allow Aqua to run a daemon on every node. Enforcement can be applied to containers, hosts, and the network activity between them in the form of firewall policies.
 
 Check the status of the Aqua Enforcers in the Aqua Console:
-![edit enforcers](/images/configure_aqua/edit-enforcer.png)
+![edit enforcers](/images/configure_aqua/edit-enforcer-new.png)
 
 Enable additional features and set them to Enforce mode:
-![check enforcers](/images/configure_aqua/check-enforcer.png)
+![check enforcers](/images/configure_aqua/check-enforcer-new.png)
 
 Congratulations! You have successfully deployed and configured the Aqua Platform!
 
