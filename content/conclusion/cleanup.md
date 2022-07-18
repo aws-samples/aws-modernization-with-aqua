@@ -10,7 +10,7 @@ To remove the Aqua deployment and the Amazon EKS cluster, run the following comm
 
 ```shell
 kubectl delete ns aqua
-eksctl delete cluster --name=$CLUSTER --region=us-east-1
+eksctl delete cluster --name=$CLUSTER --region=$AWS_REGION
 ```
 
 Thank you!
