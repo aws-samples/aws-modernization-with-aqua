@@ -40,9 +40,15 @@ Get cluster Name and Region:
 eksctl get clusters
 ```
 
+Set CLUSTER: (use the name of the Cluster from earlier step)
+
+```bash
+CLUSTER=<YOUR_CLUSTER_NAME>
+```
+
 Update kubeconfig:
 ```bash
-aws eks update-kubeconfig --name <CLUSTER_NAME> --region <REGION>
+aws eks update-kubeconfig --name $CLUSTER --region $AWS_REGION
 ```
 
 Confirm your nodes:
