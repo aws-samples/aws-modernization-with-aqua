@@ -42,8 +42,16 @@ kubectl get nodes # if we see our 3 nodes, we know we have authenticated correct
 {{% notice info %}}
 If not able to see nodes, you may need to update the kubeconfig file. You can use the following command.
 {{% /notice %}}
+
+Get Cluster Name and Region:
+
 ```bash
-aws eks update-kubeconfig --name eksworkshop-eksctl --region $AWS_REGION
+eksctl get clusters
+```
+
+Update kubeconfig
+```bash
+aws eks update-kubeconfig --name <CLUSTER_NAME> --region <REGION>
 ```
 
 
