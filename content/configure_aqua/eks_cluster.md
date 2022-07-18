@@ -29,31 +29,26 @@ Launching EKS and all the dependencies will take approximately 15 minutes
 
 
 
+
+
 ## Verify the cluster
 #### Test the cluster:
-Confirm your nodes:
 
-
-```bash
-kubectl get nodes # if we see our 3 nodes, we know we have authenticated correctly
-```
-
-
-{{% notice info %}}
-If not able to see nodes, you may need to update the kubeconfig file. You can use the following command.
-{{% /notice %}}
-
-Get Cluster Name and Region:
+Get cluster Name and Region:
 
 ```bash
 eksctl get clusters
 ```
 
-Update kubeconfig
+Update kubeconfig:
 ```bash
 aws eks update-kubeconfig --name <CLUSTER_NAME> --region <REGION>
 ```
 
+Confirm your nodes:
+```bash
+kubectl get nodes # if we see our 3 nodes, we know we have authenticated correctly
+```
 
 #### Export the Worker Role Name for use throughout the workshop:
 
