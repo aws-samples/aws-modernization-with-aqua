@@ -49,20 +49,22 @@ Click the **Launch** button to create the CloudFormation stack in the AWS Manage
 | ------ |:------:|:--------:|
 | CodePipeline & Aqua |  {{< cf-launch "ci-cd-codepipeline-aqua.cfn.yml" "aqua-devsecops" >}} | {{< cf-download "ci-cd-codepipeline-aqua.cfn.yml" >}}  |
 
-![CFN stack input](/images/devsecops/codepipeline-params.png)
+![CFN stack input](/images/devsecops/codepipeline-params-new.png)
 
 ### Enable static scanning 
 
-```scannercli``` is an Aqua binary that scans the image locally as soon as it's built, and then communicates back to the Aqua CSP server to compare the findings with Aqua’s CyberCenter. Pertaining to the security tolerance level, the build can be passed or failed based on the scanning results.
+"scannercli" is an Aqua binary that scans the image locally as soon as it's built, and then communicates back to the Aqua CSP server to compare the findings with Aqua’s CyberCenter. Pertaining to the security tolerance level, the build can be passed or failed based on the scanning results.
+
 The reports are stored as an AWS CodePipeline artifact in the Amazon Simple Storage Service (Amazon S3) bucket, and can be easily retrieved from the AWS Management Console itself.
 
 To enable automated static scanning of the build artifacts, scannercli is used in the buildspec.yml (https://github.com/aquasecurity/amazon-eks-devsecops/blob/master/buildspec.yml#L19) in the build stage as shown here:
 
-```yaml
+yaml
 build:
 
 commands:
 
+```
 - docker build --tag $REPOSITORY_URI:$TAG .
 
 - ./scannercli scan --host $AQUA_URL --user $AQUA_USER --password $AQUA_PASSWORD  --register-compliant   --local $REPOSITORY_URI:$TAG --no-verify --htmlfile aqua.html
