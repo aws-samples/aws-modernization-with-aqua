@@ -6,22 +6,22 @@ weight: 18
 ---
 
 In order for the build to succeed, we can go to the **Aqua Console** and modify the **Assurance policy** that we created [previously](/devsecops/assurance).
-![Modify assurance](/images/devsecops/modify-assurance.png)
+![Modify assurance](/images/devsecops/modify-assurance-new.png)
 
 Once you have modified the policy go back to the [CodePipeline in the Management Console](https://console.aws.amazon.com/codesuite/codepipeline/pipelines). On the details page for our CodePipeline, click on **Release Change** to trigger a new pipeline. 
-![Trigger pipeline](/images/devsecops/trigger-pipeline.png)
+![Trigger pipeline](/images/devsecops/trigger-pipeline-new.png)
 
 Notice this time, the pipeline succeeds. 
-![Build success](/images/devsecops/build-success.png)
+![Build success](/images/devsecops/build-success-new.png)
 
 Since the pipeline has succeeded, the application also has been successfully deployed to the Amazon EKS cluster. Check out the output of the following command in the Cloud9 IDE
 ```shell
 kubectl get pods
 ```
 
-![kubectl output](/images/devsecops/kubectl.png)
+![kubectl output](/images/devsecops/kubectl-new.png)
 
 You can also check out in the **Aqua Console** that the application has also been deployed, by clicking on Risk Explorer.
-![application](/images/devsecops/risk-explorer.png)
+![application](/images/devsecops/risk-explorer-new.png)
 
 
