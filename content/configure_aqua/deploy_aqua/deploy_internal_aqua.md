@@ -14,7 +14,7 @@ Go to the AWS Cloud9 IDE and follow the steps in succession.
 ```shell
 ./aquactl download all --platform eks --version 2022.4 --output-dir workshop
 ```
-![aquactl install](/images/configure_aqua/aquactl-install.png)
+![aquactl install](/images/configure_aqua/aquactl-install-new.png)
 
 ```shell
 kubectl create ns aqua
@@ -33,7 +33,7 @@ Deploy Aqua using the following command
 rm -f workshop/009-aqua-kube*
 kubectl apply -f workshop/
 ```
-![aquactl output](/images/configure_aqua/aquactl-internal-output.png)
+![aquactl output](/images/configure_aqua/aquactl-internal-output-new.png)
 
 Note the Aqua Console Service endpoint.
 
@@ -47,9 +47,9 @@ echo $AQUA_CONSOLE
 
 ## Login to the Aqua Console
 Open a browser and log in to the Aqua Console using the ```AQUA_CONSOLE``` URL from the above output, and create the Aqua administrator password.
-![aqua console](/images/configure_aqua/aqua-console.png)
+![aqua console](/images/configure_aqua/aqua-console-new.png)
 
 Once you are logged in, enter the Aqua license token from your Aqua account.
 
-![aqua license](/images/configure_aqua/aqua-license.png)
+![aqua license](/images/configure_aqua/aqua-license-new.png)
 
