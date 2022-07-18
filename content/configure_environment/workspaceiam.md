@@ -49,8 +49,12 @@ aws configure get default.region
 
 Use the [GetCallerIdentity](https://docs.aws.amazon.com/cli/latest/reference/sts/get-caller-identity.html) CLI command to validate that the Cloud9 IDE is using the correct IAM role.
 
+{{% notice note %}}
+This command is checking for IAM role with "eksworkshop-admin" in the naame. This is role is created for the AWS Workshop event. If you created a IAM role yourself, please modify the script to use your IAM role information.
+{{% /notice %}}
+
 ```
-aws sts get-caller-identity --query Arn | grep aqua-workshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
+aws sts get-caller-identity --query Arn | grep eksworkshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
 ```
 
 <!--
