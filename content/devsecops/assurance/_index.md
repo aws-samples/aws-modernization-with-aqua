@@ -23,19 +23,19 @@ It’s easy to create a sound assurance policy, in accordance with security best
 #### Update the default assurance policy in Aqua Console
 In the Aqua Platform console, go to the Policies tab on the left and select Assurance Policies. In the screen that appears, select Default policy of type Image.
 
-![assurance policy](/images/devsecops/assurance.png)
+![assurance policy](/images/devsecops/assurance-new.png)
 
 Once inside the policy, add the security controls indicated below. 
 
 Click on ```Save``` to save your work.
 
-![assurance criteria](/images/devsecops/sec-controls.png)
+![assurance criteria](/images/devsecops/sec-controls-new.png)
 
 For Aqua to serve as a security hook in the build pipeline, ensure the Fail Aqua step in CI/CD under Actions is checked. This causes AWS CodePipeline to fail if the image does not comply with the controls set in this policy. 
 
 If you choose to uncheck the Fail the Aqua step in CI/CD field, then Aqua does not fail the build, but marks the image as non-compliant.
 
-![actions](/images/devsecops/actions.png)
+![actions](/images/devsecops/actions-new.png)
 
 
 {{% children showhidden="false" %}}
