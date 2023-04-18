@@ -3,7 +3,7 @@ title = "Installing pre-requisites"
 date = 2020-06-16T19:01:12-04:00
 weight = 3
 chapter = false
-hidden = yes
+hidden = true
 pre = "<b></b>"
 +++
 
