@@ -1,7 +1,7 @@
 ---
 title: "Configure Environment"
 pre: "<b>   </b>"
-chapter: false
+chapter: true
 weight: 2
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 tags:

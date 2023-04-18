@@ -1,7 +1,7 @@
 ---
 title: "Self-paced Workshop"
-chapter: false
-weight: 11
+chapter: true
+weight: 2
 ---
 
 ### Running the workshop on your own
