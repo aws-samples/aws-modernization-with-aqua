@@ -3,6 +3,7 @@ title = "Creating an Amazon EKS cluster"
 date = 2020-06-16T19:01:12-04:00
 weight = 5
 chapter = false
+hidden = true
 pre = "<b></b>"
 +++
 
