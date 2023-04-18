@@ -1,6 +1,6 @@
 ---
 title: "Self-paced Workshop"
-chapter: true
+chapter: false
 weight: 11
 ---
 

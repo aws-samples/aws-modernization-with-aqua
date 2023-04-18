@@ -1,6 +1,6 @@
 ---
 title: "AWS event"
-chapter: true
+chapter: false
 weight: 12
 ---
 
