@@ -8,7 +8,7 @@ weight: 18
 In order for the build to succeed, we can go to the **Aqua Console** and modify the **Assurance policy** that we created [previously](/devsecops/assurance).
 ![Modify assurance](/images/devsecops/modify-assurance-new.png)
 
-Once you have modified the policy go back to the [CodePipeline in the Management Console](https://console.aws.amazon.com/codesuite/codepipeline/pipelines). On the details page for our CodePipeline, click on **Release Change** to trigger a new pipeline. 
+Once you have modified the policy go back to the [CodePipeline in the Management Console](https://us-east-1.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-east-1). On the details page for our CodePipeline, click on **Release Change** to trigger a new pipeline. 
 ![Trigger pipeline](/images/devsecops/trigger-pipeline-new.png)
 
 Notice this time, the pipeline succeeds. 
